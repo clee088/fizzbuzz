@@ -48,12 +48,13 @@ n = int(input("How many numbers shall we print?   "))
 f = int(input("For multiples of what number shall we print 'Fizz'?    "))
 b = int(input("For multiples of what number shall we print 'Buzz'?    "))
 
-def tablef():
-    table = ""
-    
-    for i in range(1, n+1):
-        table +=("{0:>3}".format(i))
-        print(table)
-        table = ""
-    
-tablef()
+for i in range(1, n+1):
+
+    if i % f == 0:
+        print("Fizz")
+    elif i % b == 0:
+        print("Buzz")
+    elif i % (f*b) == 0:
+        print("FizzBuzz")
+    else:
+        print(i)
