@@ -1,7 +1,7 @@
 """
 fizzbuzz.py
 Author: Christopher Lee
-Credit: <list sources used, if any>
+Credit: none
 
 Assignment:
 
